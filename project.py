@@ -59,7 +59,6 @@ string.punctuation = (
     + "–"
     + "…"
     + "”"
-    + "1234567890"
     + "•••"
     + "—"
     + "«"
@@ -72,6 +71,7 @@ word_bank = {}
 def get_wordlist(input_path, output_path, word_count):
     with open(input_path, "r", encoding="UTF-8") as file:
         answer1 = file.read()
+        string.punctuation = string.punctuation + "1234567890"
         for character in string.punctuation:
             answer1 = answer1.replace(character, "")
 
