@@ -116,21 +116,19 @@ def get_definition(OG, ED, prompt):
 
 
 def get_sentence(path, word):
-    index = 0
+    index = []
     with open(
         path, "r", encoding="UTF-8"
     ) as file:
         text = file.read()
-        string.punctuation = string.punctuation.replace(".", "")
-        for character in string.punctuation:
-            text = text.replace(character, "")
-            text = text.replace("\t\t", "")
-            text = text.replace("\t", "")
-            text = text.replace("\n", "")
+        text = text.replace("\t\t", "")
+        text = text.replace("\t", "")
+        text = text.replace("\n", "")
         text_list = text.split(".")
         for entry in text_list:
             if (" " + word + " ") in entry:
-                return entry
+                index.append(entry)
+        return random.choice(index)
 
 
 def make_deck(deck_name, og_lang, trans_lang, word, definition, sentence1):
