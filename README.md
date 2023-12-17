@@ -6,4 +6,4 @@ Any error 500+ means the server blew up or smth im not sure dw abt it too much a
 200 is what you want to see.
 All these numbers only show if you're using the dictionary, so if you're translating to a non-english language no need to worry abt this
 <img width="960" alt="anki text" src="https://github.com/Yaakuu/files/assets/135718617/e08704a4-e185-441e-b135-715c2cb11596">
-<img width="960" alt="txt file" src="https://github.com/Yaakuu/files/assets/135718617/1e361812-4624-4e7c-9d93-490084b63d64">
+<img width="960" alt="txt file" src="https://github.com/Yaakuu/files/assets/135718617/b3f0b54e-0709-4d88-85f8-2f4363f6de3b">
