@@ -144,6 +144,8 @@ def get_multilingual_definition(original_language, Translated_language, word):
 
 
 def main():
+    word_tuple = []
+    counter = 1
     original_language = input("Original language:").lower()
     Translated_language = input("Translated language:").lower()
     option = ''
@@ -180,6 +182,9 @@ def main():
                     definition,
                     sentence,
                 )
+                print(f'word {counter} finished')
+                counter += 1
+            
         else:
             for word in var2:
                 definition = get_multilingual_definition(original_language2, Translated_language2, word)
@@ -192,6 +197,8 @@ def main():
                     definition,
                     sentence,
                 )
+                print(f'word {counter} finished')
+                counter += 1
 
 
 
