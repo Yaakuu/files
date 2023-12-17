@@ -144,7 +144,6 @@ def get_multilingual_definition(original_language, Translated_language, word):
 
 
 def main():
-    word_tuple = []
     counter = 1
     original_language = input("Original language:").lower()
     Translated_language = input("Translated language:").lower()
