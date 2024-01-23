@@ -128,7 +128,10 @@ def get_sentence(path, word):
         for entry in text_list:
             if (" " + word + " ") in entry:
                 index.append(entry)
-        return random.choice(index)
+        try:
+            return random.choice(index)
+        except IndexError:
+            return None
 
 
 def make_deck(deck_name, og_lang, trans_lang, word, definition, sentence1):
