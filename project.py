@@ -110,6 +110,8 @@ def get_definition(OG, ED, prompt):
         except IndexError:
             if (translations[0]).text != "arrow_upward":
                 return f"{(translations[0]).text}"
+            else:
+                return None
     else:
         print("Error 400-404")
     sleep(0.1)
