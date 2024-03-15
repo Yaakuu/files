@@ -1,7 +1,7 @@
 import string
 from time import sleep
 import random
-from requests_html import HTMLSession #pip instal requests-html
+from requests_html import HTMLSession #pip install requests-html
 from googletrans import Translator #pip install googletrans==3.1.0a0
 import googletrans
 
